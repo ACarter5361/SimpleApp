@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/ec2-user/server/
-npm start
+npm run build
 #pm2 start npm --name "simple-reactjs-app" -- start
 #pm2 startup
 #pm2 save
