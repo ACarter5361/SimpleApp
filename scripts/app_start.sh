@@ -6,7 +6,7 @@ if pgrep -x "$SERVICE" >/dev/null
 then
    exit
 else
-    npm start& echo "Services started"
+    npm run build
     # uncomment to start nginx if stopped
     # systemctl start nginx
     # mail  
