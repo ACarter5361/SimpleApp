@@ -7,6 +7,10 @@ SERVICE="node"
 #   exit
 #else
     npm run build
+    cd /home/ec2-user/server/build/
+    sudo mv *.* /var/www/html/ .
+    cd /var/www/html/
+    #sudo chown apache *
     # uncomment to start nginx if stopped
     # systemctl start nginx
     # mail  
