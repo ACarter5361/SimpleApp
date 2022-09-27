@@ -8,7 +8,8 @@ SERVICE="node"
 #else
     npm run build
     cd /home/ec2-user/server/build/
-    sudo cp -r . /var/www/html/ 
+    mv index.html /var/www/html/
+    sudo cp -r . /var/www/html/simple-reactjs-app/ 
     #sudo chown apache *
     # uncomment to start nginx if stopped
     # systemctl start nginx
