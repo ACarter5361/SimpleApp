@@ -7,7 +7,8 @@ SERVICE="node"
 #   exit
 #else
     npm run build
-    sudo cp /home/ec2-user/server/build/*.* /var/www/html/ 
+    cd /home/ec2-user/server/build/
+    sudo cp -r . /var/www/html/ 
     #sudo chown apache *
     # uncomment to start nginx if stopped
     # systemctl start nginx
