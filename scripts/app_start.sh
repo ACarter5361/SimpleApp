@@ -2,16 +2,16 @@
 cd /home/ec2-user/server/
 #!/bin/bash
 SERVICE="node"
-if pgrep -x "$SERVICE" >/dev/null
-then
-   exit
-else
+#if pgrep -x "$SERVICE" >/dev/null
+#then
+#   exit
+#else
     npm run build
     # uncomment to start nginx if stopped
     # systemctl start nginx
     # mail  
-fi
-exit 
+#fi
+#exit 
 
 # original code is below
 
