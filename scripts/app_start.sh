@@ -1,15 +1,12 @@
 #!/bin/bash
 cd /home/ec2-user/server/
-#!/bin/bash
-SERVICE="node"
-#if pgrep -x "$SERVICE" >/dev/null
-#then
-#   exit
-#else
+    sudo groupadd -r www-data
+    sudo useradd www-data -M -r -g www-data -s /sbin/nologin
     npm run build
     cd /home/ec2-user/server/build/
     mv index.html /var/www/html/
-    sudo cp -r . /var/www/html/simple-reactjs-app/ 
+    sudo cp -r . /var/www/html/simple-reactjs-app/
+    sudo chown -R www-data:www-data /var/www/
     #sudo chown apache *
     # uncomment to start nginx if stopped
     # systemctl start nginx
