@@ -1,7 +1,7 @@
 {
 	"id": 3,
 	"name": "Tom",
-	"email": "Tom@test.com",
+	"email": "Tom@local.com",
 	"phone": "123412345",
 	"city": "Chennai",
 	"state": "Tamil Nadu",
